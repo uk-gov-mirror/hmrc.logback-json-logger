@@ -16,16 +16,15 @@
 
 package uk.gov.hmrc.play.logging
 
-import java.net.InetAddress
-import java.nio.charset.StandardCharsets
-
 import ch.qos.logback.classic.spi.{ILoggingEvent, ThrowableProxyUtil}
 import ch.qos.logback.core.encoder.EncoderBase
 import com.fasterxml.jackson.core.json.JsonWriteFeature.ESCAPE_NON_ASCII
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.apache.commons.lang3.time.FastDateFormat
 import com.typesafe.config.ConfigFactory
+import org.apache.commons.lang3.time.FastDateFormat
 
+import java.net.InetAddress
+import java.nio.charset.StandardCharsets
 import scala.util.{Success, Try}
 import scala.jdk.CollectionConverters._
 

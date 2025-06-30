@@ -22,14 +22,14 @@ lazy val root = Project("logback-json-logger", file("."))
     majorVersion        := 5,
     isPublicArtefact    := true,
     scalaVersion        := "2.13.16",
-    crossScalaVersions  := Seq("2.13.16", "3.3.5"),
+    crossScalaVersions  := Seq("2.13.16", "3.3.6"),
     libraryDependencies ++= Seq(
       "org.apache.commons"             %  "commons-lang3"           % "3.17.0",
       // jackson and logback will be evicted depending on the version of Play
       "com.fasterxml.jackson.core"     %  "jackson-core"            % "2.14.3",
       "com.fasterxml.jackson.core"     %  "jackson-databind"        % "2.14.3",
-      "ch.qos.logback"                 %  "logback-core"            % "1.5.12",
-      "ch.qos.logback"                 %  "logback-classic"         % "1.5.12",
+      "ch.qos.logback"                 %  "logback-core"            % "1.5.17",
+      "ch.qos.logback"                 %  "logback-classic"         % "1.5.17",
       "com.typesafe"                   %  "config"                  % "1.4.3",
       "com.vladsch.flexmark"           %  "flexmark-all"            % "0.64.8"    % Test,
       "org.scalatest"                  %% "scalatest"               % "3.2.17"    % Test,
